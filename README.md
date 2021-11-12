@@ -31,7 +31,7 @@ Inside `config/auth.php` add new `provider` like so:
         'driver' => 'eloquent.email',
         'models' => [
             'user' => App\Models\User::class,
-            'email' => MakiDizajnerica\MultiEmail\Email::class,
+            'email' => MakiDizajnerica\MultiEmail\Models\Email::class,
         ],
     ],
 
@@ -74,7 +74,7 @@ The last step would be to change Laravel's default `Illuminate\Auth\Passwords\Pa
     Illuminate\Redis\RedisServiceProvider::class,
 
     Illuminate\Auth\Passwords\PasswordResetServiceProvider::class, // <- remove this line
-    MakiDizajnerica\MultiEmail\Password\PasswordResetServiceProvider::class, // <- add this line
+    MakiDizajnerica\MultiEmail\Providers\PasswordResetServiceProvider::class, // <- add this line
 
     Illuminate\Session\SessionServiceProvider::class,
     Illuminate\Translation\TranslationServiceProvider::class,
