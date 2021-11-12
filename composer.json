@@ -1,0 +1,49 @@
+{
+    "name": "makidizajnerica/laravel-multiemail",
+    "description": "Allow users to have more than one email address related to their account.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "laravel",
+        "framework",
+        "authentication",
+        "email addresses",
+        "email address",
+        "emails",
+        "email",
+        "auth"
+    ],
+    "homepage": "https://github.com/MakiDizajnerica/laravel-multiemail",
+    "authors": [
+        {
+            "name": "Nemanja Marijanovic",
+            "email": "n.marijanovic@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "laravel/framework": ">=8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.9",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "MakiDizajnerica\\MultiEmail\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MakiDizajnerica\\MultiEmail\\Tests": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MakiDizajnerica\\MultiEmail\\Providers\\MultiEmailServiceProvider"
+            ]
+        }
+    }
+}
