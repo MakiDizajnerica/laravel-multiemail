@@ -126,7 +126,7 @@ use MakiDizajnerica\MultiEmail\HasMultipleEmails;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use MakiDizajnerica\MultiEmail\Contracts\HasMultipleEmails as HasMultipleEmailsContract;
 
-class User extends Authenticatable implement HasMultipleEmailsContract
+class User extends Authenticatable implements HasMultipleEmailsContract
 {
     use HasMultipleEmails;
     
